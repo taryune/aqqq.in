@@ -2,14 +2,10 @@
 <ul class="post-list">
   {{ range .Pages }}
     <li class="post-list-item">
-      <a class="post-list-link" href="{{ .RelPermalink }}">
-        <span class="post-title">{{ .Title }}</span>
-      </a>
       {{ if not .Date.IsZero }}
-        <time datetime="{{ .Date.Format "2006-01-02" }}">
-          {{ .Date.Format "Jan 2, 2006" }}
-        </time>
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
       {{ end }}
+      <a class="post-list-link" href="{{ .RelPermalink }}"><span class="post-title">{{ .Title }}</span></a>
       {{ $summary := or .Params.summary (.Summary | plainify) }}
       {{ with $summary }}
         <p class="post-summary">{{ . | truncate 160 }}</p>

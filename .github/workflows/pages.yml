@@ -25,7 +25,7 @@ jobs:
           extra_nix_config: |
             accept-flake-config = true
 
-      - uses: DeterminateSystems/magic-nix-cache-action@v9
+      - uses: DeterminateSystems/magic-nix-cache-action@v14
 
       - name: Build site
         run: nix build .#default --print-build-logs

@@ -6,78 +6,80 @@ summary = ""
 tags = ["Event"]
 +++
 
-私が拠点を日本に戻してからの半年間ほど、自分の時間の大半をサウンドシステムの制作や、フィールドレコーディング、DJ、シンセサイザーの開発など、”音”全般に費やしてきました。
-私自身今までDJとして音楽を楽しんだり、サウンドエンジニア的な観点でシステムを動かしたりしてきたのですが、これほど濃厚に音に対して触れ合って考えさせられる期間は初めてであった感覚があります。
+For about half a year since moving my base back to Japan, I've spent most of my time on "sound" in the broadest sense: building sound systems, field recording, DJing, developing synthesizers.
+I've enjoyed music as a DJ and run systems from a sound engineer's perspective before, but this feels like the first period where I've engaged with sound so intensely and been made to think so deeply about it.
 
-その活動の中で、共に音という共通の接点で活動してきた仲間 hikino, taishi.ro, torrentshinodaで結成したコレクティブがknow clueです。
-know clueのメンバーには、自ら初めて0から設計するサウンドシステムに対して信用してくれたこと、ともに音と向き合う機会を与えてくれたことを大変感謝しています。
+Out of that activity came know clue, a collective formed with hikino, taishi.ro, and torrentshinoda — friends I've been working alongside through our shared point of contact, sound.
+I'm deeply grateful to the members of know clue for trusting the first sound system I ever designed from scratch, and for giving me the chance to face sound together with them.
 
-そして、今回そのknow clueとしてイベントを開催する運びになりました。
-これは半年間、体験としての音を起点とした我々の実験活動結果を場であります。
-know clueのメンバーはもちろんのこと、今回出演を快諾してくださったすべての演者の皆様方を僭越ながらご紹介させていただきます。
+And now, we're putting on an event as know clue.
+This is a space presenting the results of half a year of our experiments, starting from sound as experience.
+Allow me to introduce not only the members of know clue, but all of the performers who kindly agreed to join us.
 
 ### dj desu
 
-重化学工業系、ギアのミシミシや油の匂いを彷彿させる自分の中の大きな感情を音として表現している感じが素敵です。
-良く彼の実験音楽セットを耳にするのですが、今回は1Fのダンスフロアということで、フロアの雰囲気をどのように作っていくか楽しみです。
-今回はイベント当日で配布する予定のMixを提供してれました。ぜひ現場で入手してください。
+There's something wonderful about how he expresses the big emotions inside him as sound; heavy industry, the creak of gears, the smell of oil.
+I have heard his experimental sets, but this time he's on the 1F dance floor, so I'm looking forward to seeing how he shapes the mood of the room.
+He's also provided a mix that we'll be handing out on the day of the event. Be sure to grab one on site.
 
 ### hikino (know clue)
 
-笑顔が素敵なHappy Boy。
-彼と一緒に音楽を楽しむと、音について難しく考えすぎてしまったときなどに体で音を楽しむことの大切さを思い出させてくれます。
-この感覚は自分の中でとても大切にしている感覚でいつも感謝しています。
-只々Happyなだけでなく、その中にもズブズブしたものを混ぜ込んでくるのがまた良い。
-当日はきっと笑顔になれるよな素敵なダンスミュージックを提供してくれることでしょう。
+A Happy Boy with a wonderful smile.
+Enjoying music with him reminds me how important it is to enjoy sound with your body, especially when I start overthinking it.
+That feeling is something I hold dear, and I'm always grateful for it.
+And it's not just pure happiness; he mixes something murky in there too, which makes it even better.
+On the day, I'm sure he'll bring lovely dance music that will put a smile on your face.
+
 [https://www.instagram.com/kosuke.ai/](https://www.instagram.com/kosuke.ai/)
+
 ### dJ 置石
 
-選曲の幅の広さと深さは凄まじいと感じています。
-初めて彼のMixを聞いたときの衝撃はうまく言葉にできないですが、様々な音の種類が飛び交うなかで、Set全体としては方向性を持っている、しかし展開が予想できないという一見矛盾しているような彼のセットは衝撃を受けました。
-私自身もBPMやジャンルに縛られないプレイスタイルに大きな影響を受けています。
-また彼の音源レビューBlogは必見です。
+The breadth and depth of his selection is staggering.
+I can't quite put into words the shock of hearing his mix for the first time: all kinds of sounds flying around, yet the set as a whole holds a clear direction while remaining completely unpredictable; a seemingly contradictory thing that floored me.
+His playing style, unbound by BPM or genre, has had a huge influence on me.
+His record review blog is also a must-read. You will find amazing reviews.
 
 [https://okiisi.hatenadiary.org/](https://okiisi.hatenadiary.org/)
 
 ### Oyubi
 
-長年友人として尊敬するアーティストです。
-HardcoreなBeatの中に遊び心と、時よりおもちのようなやわらかさを潜めた複雑なサウンドを感じさせます。
-決して難しさだけではない、自分の軸はぶさないけど、フロアの環境をしっかりと見ているので、安心して身体を開放してくれるような感覚に陥いる身体性を持ったプレイをいつも見せてくれます。
-今回は他の演者の方々のフロアの作り方から、どのように彼のセットを作り上げていくかがとても楽しみです。
+An artist I've long respected as a friend.
+Within hardcore beats you can feel playfulness and complex sound that sometimes hides a mochi-like softness.
+It's never difficulty for its own sake; he never loses his own axis, yet he watches the floor closely, and his physical, embodied playing always makes you feel safe enough to let your body go.
+This time I'm really curious to see how he builds his set out of the floor the other performers create.
 
 [https://oyubi.bandcamp.com/](https://oyubi.bandcamp.com/)
 
 ### SUGAI KEN
 
-その日常の音の中にある、こちらをひょっこり覗いてくるようなサイケデリックな体験を彷彿とさせます。
-オランダに居住していたときに発見したアーティストで、我が家にて毎日の朝晩のお香セッションとして生活ルーティンの中に取り込まれていました。
-またtaishi.roとmixを送り合っていた中で、2人とも『不浮不埋』を持っており、お気に入りのアルバムであることが判明しました。普段は別々に音を探していた2人の交差点となったきっかけのアーティストでもあります。
+His work evokes a psychedelic experience hidden inside everyday sound, something that peeks out at you unexpectedly.
+I discovered him while living in the Netherlands, and he became part of my daily routine, soundtracking morning and evening incense sessions at home with my partner.
+Later, while sharing mixes with taishi.ro, we found out we both owned "UkabazUmorezU" and that it was a favorite album for both of us. He's the artist who became the intersection point for two people who had until then been digging separately.
 
 [https://linktr.ee/SUGAIKEN](https://linktr.ee/SUGAIKEN)
 
 ### taishi.ro (know clue)
 
-パーティー後のアフターで仲間と集まって音楽を掛け合うセッションでは、時より私の知らない素敵な音楽を提供してれています。
-彼のその音楽を知る過程で彼の熱心さ、姿勢に感激を受けました。
-帰国のタイミングで一緒に音楽やろうよって声をかけてくれたことにとても感謝しています。
-電子音や環境音を加工、再構築するような奇妙な音の実験を体験できる、楽しいだけではない様々な感情になれる彼のセットは、新たな興味の扉を開けるかもしれません。
+At after-parties where we gather and play records for each other, he often shares wonderful music I've never heard.
+Getting to know that music, I was moved by his enthusiasm and his attitude.
+I'm very grateful that he reached out and asked me to make music together right when I came back to Japan.
+His sets let you experience strange sonic experiments that process and reconstruct electronic and environmental sounds; not just fun, but a whole range of emotions. He might open your door to a new interest.
 
 [https://www.taishi.ro/](https://www.taishi.ro/)
 
 
 ### torrentshinoda (know clue)
 
-互いに迷惑を掛け合ったりしても、長い間音楽を中心にともに一緒に活動してきた盟友です。
-この中でも音楽のスタイルの来歴を一番長く共有しているのですが、彼の中にある都会の中の感情を表現したような音という軸は一貫しているように感じます。
-今回は1Fのダンスフロアということで一晩の始まりをガイドしてくれるようなセットを楽しみにしています。
-また当日はコーヒーを振る舞ってくれるそうです。
-彼のコーヒーへの探究心も本物で、正直私はコーヒーの重さが好きでなかったのですが、彼の入れたそれは、軽さの中にフレーバーの豊かさがある飲み物（コーヒーとは思えないほど飲みやすい！）にとってブレイクスルーでした。
+A sworn friend I've worked with around music for a decade, even through the trouble we've caused each other.
+Of everyone here, he and I share the longest history of musical styles, and I feel his axis; sound that expresses the emotions found within the city has stayed consistent throughout.
+He's on the 1F dance floor this time, and I'm looking forward to a set that guides the beginning of the night.
+He'll also be serving coffee at the party
+His curiosity about coffee is the real thing. Honestly, I never liked the heaviness of coffee, but what he brews was a breakthrough for me: a drink with a richness of flavor inside its lightness (so easy to drink you'd hardly believe it's coffee!).
 
 [https://www.instagram.com/seeding_by_torrentmast3r/](https://www.instagram.com/seeding_by_torrentmast3r/)
 
 
-紹介は以上となります。
-最後になりますが、快く会場をお貸しくださり、当日も細やかなご配慮をいただきました会場bar bonobo皆様に、深く感謝申し上げます。
-それでは会場でお会いしましょう。
+That's it for the introductions.
+Finally, my deepest thanks to everyone at bar bonobo for generously lending us the venue and for their attentive care on the day.
+See you at the venue.
 ciao:)

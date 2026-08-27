@@ -1,0 +1,21 @@
+<header class="site-header container">
+  <div class="site-header-top">
+    <a class="site-title" href="{{ "/" | relLangURL }}">{{ .Site.Title }}</a>
+    <div class="lang-switch">
+      {{ $current := . }}
+      {{ range $i, $t := .AllTranslations }}
+        {{ if $i }}<span class="sep">/</span>{{ end }}
+        <a href="{{ $t.RelPermalink }}"{{ if eq $t.Lang $current.Lang }} class="active"{{ end }}>{{ $t.Language.Label }}</a>
+      {{ end }}
+    </div>
+  </div>
+  <nav class="site-nav">
+    <ul>
+      {{ range .Site.Menus.main }}
+        {{ if ne .Name "Home" }}
+          <li><a href="{{ .URL | relLangURL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</a></li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </nav>
+</header>

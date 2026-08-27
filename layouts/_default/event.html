@@ -1,0 +1,54 @@
+{{ define "main" }}
+  <header class="list-header">
+    <h1>{{ .Title }}</h1>
+  </header>
+  {{ with .Content }}
+    <div class="list-intro">{{ . }}</div>
+  {{ end }}
+
+  {{ $gigs := sort (default slice hugo.Data.gigs) "date" "desc" }}
+
+  {{/* group gigs by year */}}
+  {{ $byYear := dict }}
+  {{ $years := slice }}
+  {{ range $gigs }}
+    {{ $year := (time .date).Format "2006" }}
+    {{ if not (in $years $year) }}
+      {{ $years = $years | append $year }}
+    {{ end }}
+    {{ $bucket := index $byYear $year | default slice }}
+    {{ $byYear = merge $byYear (dict $year ($bucket | append .)) }}
+  {{ end }}
+
+  {{ range $year := $years }}
+    <section class="gig-year">
+      <h2>{{ $year }}</h2>
+      <ul class="gig-list">
+        {{ range index $byYear $year }}
+          {{ $gig := . }}
+          {{ $when := time .date }}
+          <li class="gig">
+            <time class="gig-date" datetime="{{ $when.Format "2006-01-02" }}">
+              {{ $when.Format "Jan 2" }}
+            </time>
+            <span class="gig-title">
+              {{ with .url }}
+                <a href="{{ . }}" rel="noopener" target="_blank">{{ $gig.title }}</a>
+              {{ else }}
+                {{ $gig.title }}
+              {{ end }}
+            </span>
+            {{ $place := delimit (slice .venue .city | complement (slice nil "")) ", " }}
+            {{ with $place }}
+              <span class="gig-venue">{{ . }}</span>
+            {{ end }}
+          </li>
+        {{ end }}
+      </ul>
+    </section>
+  {{ end }}
+
+  {{ if not $gigs }}
+    <p class="gig-empty">no gigs listed yet.</p>
+  {{ end }}
+{{ end }}

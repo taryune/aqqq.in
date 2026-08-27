@@ -1,0 +1,11 @@
+# Nix / direnv
+.direnv/
+result
+result-*
+
+# Hugo
+public/
+resources/_gen/
+.hugo_build.lock
+
+.wrangler/

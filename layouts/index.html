@@ -1,0 +1,10 @@
+{{ define "main" }}
+  {{ $section := .Site.GetPage "/posts" }}
+  {{ $posts := where .Site.RegularPages "Section" "posts" }}
+  {{ $paginator := .Paginate $posts.ByDate.Reverse }}
+  <header class="list-header">
+    <h1>{{ with $section }}{{ .Title }}{{ else }}posts{{ end }}</h1>
+  </header>
+  {{ partial "post-list.html" $paginator }}
+  {{ partial "pager.html" $paginator }}
+{{ end }}

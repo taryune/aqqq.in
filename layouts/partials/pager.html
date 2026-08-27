@@ -1,0 +1,16 @@
+{{/* Minimal pager. Expects a paginator. */}}
+{{ if gt .TotalPages 1 }}
+  <nav class="pager" aria-label="pagination">
+    {{ with .Prev }}
+      <a class="pager-prev" href="{{ .URL }}" rel="prev">&larr; newer</a>
+    {{ else }}
+      <span class="pager-prev is-disabled" aria-hidden="true">&larr; newer</span>
+    {{ end }}
+    <span class="pager-status">{{ .PageNumber }} / {{ .TotalPages }}</span>
+    {{ with .Next }}
+      <a class="pager-next" href="{{ .URL }}" rel="next">older &rarr;</a>
+    {{ else }}
+      <span class="pager-next is-disabled" aria-hidden="true">older &rarr;</span>
+    {{ end }}
+  </nav>
+{{ end }}

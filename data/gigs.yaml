@@ -1,0 +1,7 @@
+# Gigs, newest first. Grouped by year automatically from `date`.
+# Fields: date (YYYY-MM-DD, required), title (required), venue, city, url (all optional)
+- date: 2026-08-29
+  title: know clue - Gateway Experience -
+  venue: bar bonobo
+  city: Tokyo
+  url: https://clue.spot/posts/20260806-know-clue-gateway-experience/

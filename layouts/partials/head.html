@@ -1,0 +1,17 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="{{ "/favicon.ico" | relURL }}">
+  <title>
+    {{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}
+  </title>
+  {{ with .Site.Params.tagline }}
+    <meta name="description" content="{{ . }}">
+  {{ end }}
+
+  {{ partial "opengraph.html" . }}
+
+  {{ $opts := dict "transpiler" "dartsass" "outputStyle" "compressed" }}
+  {{ $style := resources.Get "scss/main.scss" | toCSS $opts | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+</head>

@@ -1,0 +1,59 @@
+baseURL = "https://aqqq.in"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+title = "aq"
+
+capitalizeListTitles = false
+
+[pagination]
+  pagerSize = 10
+
+# [[params.socials]]
+  # name = "Instagram"
+  # url = "https://instagram.com/"
+#
+[languages.en]
+  locale = "en-us"
+  label = "en"
+  weight = 1
+
+  [languages.en.params]
+    tagline = "aq"
+
+  [[languages.en.menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+
+  [[languages.en.menu.main]]
+    name = "Event"
+    url = "/event/"
+    weight = 2
+
+  [[languages.en.menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+[languages.ja]
+  locale = "ja-jp"
+  label = "ja"
+  weight = 2
+
+  [languages.ja.params]
+    tagline = "aq"
+
+  [[languages.ja.menu.main]]
+    name = "Posts"
+    url = "/ja/posts/"
+    weight = 1
+
+  [[languages.ja.menu.main]]
+    name = "Event"
+    url = "/ja/event/"
+    weight = 2
+
+  [[languages.ja.menu.main]]
+    name = "About"
+    url = "/ja/about/"
+    weight = 3

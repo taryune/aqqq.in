@@ -1,0 +1,22 @@
+{{ define "main" }}
+  <article class="post">
+    <header class="post-header">
+      <h1>{{ .Title }}</h1>
+      {{ if not .Date.IsZero }}
+        <time datetime="{{ .Date.Format "2006-01-02" }}">
+          {{ .Date.Format "January 2, 2006" }}
+        </time>
+      {{ end }}
+      {{ with .GetTerms "tags" }}
+        <ul class="post-tags">
+          {{ range . }}
+            <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    </header>
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+  </article>
+{{ end }}

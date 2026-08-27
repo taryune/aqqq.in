@@ -1,0 +1,26 @@
+{{/* Renders a paginator's pages as the post list. Expects a paginator. */}}
+<ul class="post-list">
+  {{ range .Pages }}
+    <li class="post-list-item">
+      <a class="post-list-link" href="{{ .RelPermalink }}">
+        <span class="post-title">{{ .Title }}</span>
+      </a>
+      {{ if not .Date.IsZero }}
+        <time datetime="{{ .Date.Format "2006-01-02" }}">
+          {{ .Date.Format "Jan 2, 2006" }}
+        </time>
+      {{ end }}
+      {{ $summary := or .Params.summary (.Summary | plainify) }}
+      {{ with $summary }}
+        <p class="post-summary">{{ . | truncate 160 }}</p>
+      {{ end }}
+      {{ with .GetTerms "tags" }}
+        <ul class="post-tags">
+          {{ range . }}
+            <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    </li>
+  {{ end }}
+</ul>

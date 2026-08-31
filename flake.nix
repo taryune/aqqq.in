@@ -6,14 +6,20 @@
     flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { self, nixpkgs, flake-utils }:
-    flake-utils.lib.eachDefaultSystem (system:
+  outputs =
+    {
+      self,
+      nixpkgs,
+      flake-utils,
+    }:
+    flake-utils.lib.eachDefaultSystem (
+      system:
       let
         pkgs = import nixpkgs { inherit system; };
       in
       let
         site = pkgs.stdenv.mkDerivation {
-          pname = "clue-spot";
+          pname = "hugo-page";
           version = "0.1.0";
           src = ./.;
 
@@ -38,12 +44,13 @@
         };
 
         deploy = pkgs.writeShellApplication {
-          name = "clue-spot-deploy";
+          name = "hugo-page-deploy";
           runtimeInputs = [ pkgs.wrangler ];
           text = ''
             set -euo pipefail
 
             branch="''${1:-main}"
+            project="''${CLOUDFLARE_PROJECT_NAME:-hugo-page}"
             workdir="$(mktemp -d)"
             trap 'rm -rf "$workdir"' EXIT
 
@@ -52,21 +59,22 @@
             cp -rL ${site}/. "$workdir/public/"
             chmod -R u+w "$workdir/public"
 
-            echo "Deploying to Cloudflare Pages (branch: $branch) ..."
+            echo "Deploying to Cloudflare Pages (project: $project, branch: $branch) ..."
             wrangler pages deploy "$workdir/public" \
-              --project-name=clue-spot \
+              --project-name="$project" \
               --branch="$branch"
           '';
         };
 
         deploy-ci = pkgs.writeShellApplication {
-          name = "clue-spot-deploy-ci";
+          name = "hugo-page-deploy-ci";
           runtimeInputs = [ pkgs.wrangler ];
           text = ''
             set -euo pipefail
 
             : "''${CLOUDFLARE_API_TOKEN:?CLOUDFLARE_API_TOKEN is required}"
             : "''${CLOUDFLARE_ACCOUNT_ID:?CLOUDFLARE_ACCOUNT_ID is required}"
+            : "''${CLOUDFLARE_PROJECT_NAME:?CLOUDFLARE_PROJECT_NAME is required}"
 
             # GitHub Actions provides:
             #   GITHUB_HEAD_REF - source branch on pull_request events (empty otherwise)
@@ -82,9 +90,9 @@
             cp -rL ${site}/. "$workdir/public/"
             chmod -R u+w "$workdir/public"
 
-            echo "Deploying to Cloudflare Pages (branch: $branch) ..."
+            echo "Deploying to Cloudflare Pages (project: $CLOUDFLARE_PROJECT_NAME, branch: $branch) ..."
             wrangler pages deploy "$workdir/public" \
-              --project-name=clue-spot \
+              --project-name="$CLOUDFLARE_PROJECT_NAME" \
               --branch="$branch"
           '';
         };
@@ -110,12 +118,13 @@
 
         apps.deploy = {
           type = "app";
-          program = "${deploy}/bin/clue-spot-deploy";
+          program = "${deploy}/bin/hugo-page-deploy";
         };
 
         apps.deploy-ci = {
           type = "app";
-          program = "${deploy-ci}/bin/clue-spot-deploy-ci";
+          program = "${deploy-ci}/bin/hugo-page-deploy-ci";
         };
-      });
+      }
+    );
 }
